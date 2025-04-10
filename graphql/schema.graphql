@@ -1,0 +1,19 @@
+input ChatMessageInput {
+  senderName: String!
+  senderContact: String!
+  message: String!
+  time: String!
+  group: String!
+}
+
+type ChatMessage {
+  senderName: String
+}
+
+type Mutation {
+  addChatMessage(input: ChatMessageInput!): ChatMessage
+}
+
+type Query {
+  hello: String
+}
